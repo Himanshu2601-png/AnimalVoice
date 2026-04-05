@@ -58,10 +58,6 @@ export default function Home() {
   // Load Custom Teachable Machine Model
   useEffect(() => {
     async function initModel() {
-      // TEMPORARILY DISABLED FOR TESTING - Using fallback mode
-      console.log("Using fallback mock API mode for testing");
-      return;
-      
       try {
         const tf = await import('@tensorflow/tfjs');
         const speechCommands = await import('@tensorflow-models/speech-commands');
