@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  turbopack: {},
   serverExternalPackages: ['@tensorflow-models/speech-commands'],
   webpack: (config, { isServer }) => {
     if (!isServer) {
